@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Augustino Hogate | Accounting Portfolio</title>
+<style>
+:root{--bg:#f6f8fa;--card:#fff;--bd:#d0d7de;--tx:#1f2328;--tx2:#57606a;--ac:#0969da;--chip:#ddf4ff}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--card:#161b22;--bd:#30363d;--tx:#f0f6fc;--tx2:#9da7b3;--ac:#58a6ff;--chip:rgba(56,139,253,.15)}}
+:root[data-theme="dark"]{--bg:#0d1117;--card:#161b22;--bd:#30363d;--tx:#f0f6fc;--tx2:#9da7b3;--ac:#58a6ff;--chip:rgba(56,139,253,.15)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+a{color:var(--ac);text-decoration:none}a:hover{text-decoration:underline}
+header{background:var(--card);border-bottom:1px solid var(--bd);padding:12px 24px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:10}
+.brand{font-weight:600}
+button{font:inherit;cursor:pointer}
+.toggle{background:none;border:1px solid var(--bd);color:var(--tx);padding:6px 12px;border-radius:6px;font-size:.85rem}
+.wrap{max-width:1100px;margin:0 auto;padding:24px;display:grid;grid-template-columns:260px 1fr;gap:32px}
+@media(max-width:768px){.wrap{grid-template-columns:1fr}.avatar{max-width:220px}}
+.avatar{width:100%;aspect-ratio:1;border-radius:50%;overflow:hidden;border:2px solid var(--bd);margin-bottom:16px}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+h1{font-size:1.6rem;line-height:1.2}
+.statement{color:var(--tx2);margin-top:8px;font-size:.95rem}
+.details{list-style:none;margin-top:16px;padding-top:16px;border-top:1px solid var(--bd);display:flex;flex-direction:column;gap:8px;font-size:.9rem;color:var(--tx2);overflow-wrap:anywhere}
+.tabs{display:flex;gap:8px;border-bottom:1px solid var(--bd);margin-bottom:24px}
+.tab{background:none;border:0;border-bottom:2px solid transparent;color:var(--tx2);padding:8px 16px;font-weight:500;margin-bottom:-1px}
+.tab.on{color:var(--tx);border-bottom-color:#f78166}
+.pane{display:none}.pane.on{display:block}
+h2{font-size:1.2rem;margin-bottom:14px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.chip{background:var(--chip);color:var(--ac);padding:6px 12px;border-radius:20px;font-size:.85rem;font-weight:500}
+.skillgroup{margin-bottom:14px}.skillgroup h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--tx2);margin-bottom:6px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:16px}
+.card h3{font-size:1rem;margin-bottom:6px;overflow-wrap:anywhere}
+.card p{font-size:.88rem;color:var(--tx2)}
+.sec{background:var(--card);border:1px solid var(--bd);border-radius:8px;padding:20px;margin-bottom:18px}
+.row{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-weight:600}
+.row span:last-child{font-weight:400;color:var(--tx2)}
+.sub{font-style:italic;color:var(--tx2);font-size:.9rem;margin-bottom:8px}
+ul.b{padding-left:20px;font-size:.9rem;color:var(--tx2)}ul.b li{margin-bottom:6px}
+</style>
+</head>
+<body>
+<header>
+  <span class="brand">Augustino Hogate</span>
+  <button class="toggle" id="tg" type="button">Toggle theme</button>
+</header>
+<div class="wrap">
+  <aside>
+    <div class="avatar"><img src="headshot.jpg" alt="Headshot of Augustino Hogate"></div>
+    <h1>Augustino Hogate</h1>
+    <p class="statement">I'm a Rutgers Business School accounting major who pairs financial analysis with hands-on inventory and operations experience.</p>
+    <ul class="details">
+      <li>Swedesboro, New Jersey</li>
+      <li><a href="mailto:augustinohogate@gmail.com">augustinohogate@gmail.com</a></li>
+      <li><a href="https://github.com/tinotinotinotinotino" target="_blank" rel="noopener">GitHub: tinotinotinotinotino</a></li>
+      <li><a href="https://www.linkedin.com/in/augustino-hogate-152381347" target="_blank" rel="noopener">LinkedIn</a></li>
+    </ul>
+  </aside>
+  <main>
+    <nav class="tabs">
+      <button class="tab on" data-t="overview" type="button">Overview</button>
+      <button class="tab" data-t="resume" type="button">Resume</button>
+    </nav>
+
+    <div id="overview" class="pane on">
+      <h2>Skills Showcase</h2>
+      <div class="skillgroup"><h3>Software &amp; Tools</h3><div class="chips" style="margin-bottom:0"><span class="chip">Microsoft Office</span><span class="chip">Google Workspace</span><span class="chip">Excel &amp; VBA</span></div></div>
+      <div class="skillgroup"><h3>Accounting &amp; Analysis</h3><div class="chips" style="margin-bottom:0"><span class="chip">Financial Analysis</span><span class="chip">Inventory Costing (FIFO/LIFO)</span><span class="chip">Data Synthesis</span></div></div>
+      <div class="skillgroup"><h3>Operations &amp; People</h3><div class="chips"><span class="chip">Large-Scale Inventory Management</span><span class="chip">Warehouse Logistics</span><span class="chip">Conflict Resolution</span><span class="chip">Team Collaboration</span></div></div>
+
+      <h2>Featured Accounting Projects</h2>
+      <div class="grid">
+        <div class="card"><h3>Automated Financial Statements</h3><p>Excel and VBA general ledger workbook that generates income statements, balance sheets, and cash flow statements automatically.</p></div>
+        <div class="card"><h3>Cost Accounting &amp; Inventory Valuation</h3><p>Financial tracking model comparing FIFO and LIFO costing for bulk inventory and seasonal agricultural demand.</p></div>
+        <div class="card"><h3>Tax Expense Tracker Dashboard</h3><p>Interactive dashboard that categorizes expense data for tax reporting and produces clear financial summaries.</p></div>
+      </div>
+    </div>
+
+    <div id="resume" class="pane">
+      <div class="sec"><h2>Education</h2>
+        <div class="row"><span>Rutgers Business School, New Brunswick, NJ</span><span>May 2029</span></div>
+        <div class="sub">Bachelor of Science, Accounting | GPA: 3.4</div>
+      </div>
+      <div class="sec"><h2>Professional Experience</h2>
+        <div class="row"><span>G&amp;G Farm Market, Farm Worker</span><span>Jun 2025 - Present</span></div>
+        <div class="sub">Swedesboro, New Jersey (summer position)</div>
+        <ul class="b">
+          <li>Manage cultivation and maintenance of 4,000+ plants and vegetables.</li>
+          <li>Kept market operations uninterrupted with composure and strong service during peak holiday demand, including Mother's Day.</li>
+          <li>Improved warehouse efficiency by organizing bulk inventory and preparing shipments for high-volume seasonal demand.</li>
+          <li>Sustained focus and productivity across extended 10-hour shifts.</li>
+          <li>Maintained perfect attendance while managing time-sensitive responsibilities.</li>
+          <li>Promoted collaboration and communication on a linguistically diverse team.</li>
+        </ul>
+      </div>
+      <div class="sec"><h2>Community Service</h2>
+        <ul class="b">
+          <li><strong>Hurtado Food Pantry, St Joseph's Preparatory School:</strong> Distributed fresh food and clean water to underserved North Philadelphia residents during the holiday season.</li>
+          <li><strong>Field Street Elementary School:</strong> Supported second- and third-grade students through classroom assistance and activity leadership.</li>
+          <li><strong>An Opportunity's Knockin' &amp; New Arrivals Institute:</strong> Supported refugee families by running educational programs for children while parents attended ESL and resettlement services.</li>
+        </ul>
+      </div>
+      <div class="sec"><h2>Awards</h2><ul class="b"><li>National Honor Society Inductee</li></ul></div>
+    </div>
+  </main>
+</div>
+<script>
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tab').forEach(function(x){x.classList.remove('on')});
+  document.querySelectorAll('.pane').forEach(function(x){x.classList.remove('on')});
+  b.classList.add('on');document.getElementById(b.dataset.t).classList.add('on');
+})});
+document.getElementById('tg').addEventListener('click',function(){
+  var r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;
+  r.dataset.theme=dark?'light':'dark';
+});
+</script>
+</body>
+</html>
